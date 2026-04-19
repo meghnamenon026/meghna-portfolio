@@ -608,7 +608,7 @@ export default function App() {
                         whiteSpace: 'normal' 
                       }}
                     >
-                      meghnaamenon026@gmail.com
+                      meghnamenon026@gmail.com
                     </span>
                   </div>
                 </a>
