@@ -306,7 +306,7 @@ export default function App() {
                   className="flex flex-col sm:flex-row gap-6 items-start sm:items-center"
                 >
                   <a 
-                    href="/resume.pdf"
+                    href="/Meghna_Menon_Resume.pdf"
                     download="Meghna_Menon_Resume.pdf"
                     className="brutal-btn brutal-btn-pink text-lg py-5 px-10"
                     id="hero-resume-button"
