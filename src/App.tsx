@@ -241,7 +241,7 @@ export default function App() {
               </a>
             ))}
             <a 
-              href="/resume.pdf"
+              href="/Meghna_Menon_Resume.pdf"
               download="Meghna_Menon_Resume.pdf"
               className="brutal-btn text-xs"
               id="nav-resume-button"
@@ -253,7 +253,7 @@ export default function App() {
 
           <div className="md:hidden">
             <a 
-              href="/resume.pdf"
+              href="/Meghna_Menon_Resume.pdf"
               download="Meghna_Menon_Resume.pdf"
               className="brutal-card p-2 bg-rose-500 text-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-none"
             >
