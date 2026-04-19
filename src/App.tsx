@@ -589,7 +589,7 @@ export default function App() {
               
               <div className="flex flex-wrap gap-8 md:gap-12 justify-center">
                 <a 
-                  href="mailto:meghnaamenon026@gmail.com?subject=Connecting%20from%20your%20Portfolio" 
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=meghnamenon026@gmail.com&su=Connecting+from+your+Portfolio" target="_blank" 
                   style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer', position: 'relative', zIndex: 10 }}
                   className="flex items-center gap-6 group"
                 >
