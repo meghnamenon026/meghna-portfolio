@@ -131,6 +131,13 @@ const GALLERY_DATA: Record<string, string[]> = {
   'Credentials': [
     '/Image/credentials/ids.jpeg',
   ],
+  'Aditya Gadhvi': [
+    '/Image/Aditya gadhvi/p1.jpeg',
+  ],
+  'Zakir Khan': [
+    '/Image/Zakir khan/p1.jpeg',
+    '/Image/Zakir khan/p2.jpeg',
+  ],
 };
 
 const SectionHeader = ({ title, subtitle }: { title: string; subtitle?: string }) => (
@@ -339,7 +346,7 @@ export default function App() {
                     <img 
                       src="/profile.jpeg" 
                       alt="Meghna Menon" 
-                      className="w-full h-full object-cover grayscale brightness-110"
+                      className="w-full h-full object-cover brightness-110"
                       referrerPolicy="no-referrer"
                     />
                   </div>
@@ -632,7 +639,7 @@ export default function App() {
               <p className="text-xs font-black uppercase tracking-widest">© {new Date().getFullYear()} MEGHNA MENON • BRAND SOLUTIONS & SERVICING</p>
               <div className="flex gap-12 text-xs font-black uppercase tracking-widest">
                 <a href="#" className="hover:text-rose-500 transition-all hover:scale-110">LINKEDIN</a>
-                <a href="#" className="hover:text-rose-500 transition-all hover:scale-110">INSTAGRAM</a>
+                {/* <a href="#" className="hover:text-rose-500 transition-all hover:scale-110">INSTAGRAM</a> */}
               </div>
             </div>
           </div>
