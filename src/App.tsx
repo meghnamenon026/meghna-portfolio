@@ -104,6 +104,28 @@ const FEATURED_DECKS = [
   },
 ];
 
+const BRANDS = [
+  "/Image/Brands/Snitch.png",
+  "/Image/Brands/Mastercard.png",
+  "/Image/Brands/Visa.png",
+  "/Image/Brands/Tira.png",
+  "/Image/Brands/Trends.png",
+  "/Image/Brands/McDowells.png",
+  "/Image/Brands/Teacher's.png",
+  "/Image/Brands/Vicks.png",
+  "/Image/Brands/Hsbc.png",
+  "/Image/Brands/Hdfc.png",
+  "/Image/Brands/Tata.png",
+  "/Image/Brands/Campa.png",
+  "/Image/Brands/Grameen.png",
+  "/Image/Brands/Lahori.png",
+  "/Image/Brands/Reliance.png",
+  "/Image/Brands/Signature.png",
+  "/Image/Brands/Skybags.png",
+  "/Image/Brands/Bhutani.png",
+];
+
+
 const SKILLS = [
   "Strategic Planning", "Project Management", "Brand Solutions", "Tableau Public", 
   "Market Research", "Content Strategy", "Canva", "Microsoft Excel", 
@@ -130,6 +152,13 @@ const GALLERY_DATA: Record<string, string[]> = {
   ],
   'Credentials': [
     '/Image/credentials/ids.jpeg',
+  ],
+  'Aditya Gadhvi': [
+    '/Image/Aditya gadhvi/p1.jpeg',
+  ],
+  'Zakir Khan': [
+    '/Image/Zakir khan/p1.jpeg',
+    '/Image/Zakir khan/p2.jpeg',
   ],
 };
 
@@ -339,7 +368,7 @@ export default function App() {
                     <img 
                       src="/profile.jpeg" 
                       alt="Meghna Menon" 
-                      className="w-full h-full object-cover grayscale brightness-110"
+                      className="w-full h-full object-cover brightness-110"
                       referrerPolicy="no-referrer"
                     />
                   </div>
@@ -507,6 +536,36 @@ export default function App() {
           </div>
         </section>
 
+      {/* Brands Worked With */}
+<section id="brands" className="py-32 border-t-[3px] border-black">
+  <div className="max-w-7xl mx-auto px-6">
+    <SectionHeader 
+      title="BRANDS I'VE WORKED WITH" 
+    />
+
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 mt-12">
+      {BRANDS.map((logo, idx) => (
+        <motion.div
+          key={idx}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: idx * 0.05 }}
+          className="brutal-card p-6 bg-white flex items-center justify-center h-28 group"
+        >
+          <img 
+            src={logo} 
+            alt="Brand logo" 
+            className="max-h-full max-w-full object-contain"
+            referrerPolicy="no-referrer"
+          />
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>        
+
+
         {/* On-Ground Glimpses */}
         <section id="gallery" className="py-32 border-t-[3px] border-black bg-pink-50/50">
           <div className="max-w-7xl mx-auto px-6">
@@ -632,7 +691,7 @@ export default function App() {
               <p className="text-xs font-black uppercase tracking-widest">© {new Date().getFullYear()} MEGHNA MENON • BRAND SOLUTIONS & SERVICING</p>
               <div className="flex gap-12 text-xs font-black uppercase tracking-widest">
                 <a href="#" className="hover:text-rose-500 transition-all hover:scale-110">LINKEDIN</a>
-                <a href="#" className="hover:text-rose-500 transition-all hover:scale-110">INSTAGRAM</a>
+                {/* <a href="#" className="hover:text-rose-500 transition-all hover:scale-110">INSTAGRAM</a> */}
               </div>
             </div>
           </div>
